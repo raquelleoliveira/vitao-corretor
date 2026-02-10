@@ -3,61 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitão Corretor</title>
+    <title>Vitão Corretor - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <aside>
+    <aside id="sidebar">
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Vitão Corretor" class="logo-img">
+        </div>
+        
         <nav>
-            <ul>
+            <ul class="menu-list">
                 <li> <a href="#">Dashboard</a> </li>
                 <li> <a href="#">Imóveis</a> </li>
                 <li> <a href="#">Pendências</a> </li>
-                <li> <a href="#">Documentos</a> </li>                   
+                <li> <a href="#">Documentos</a> </li>
+            </ul>
+            <ul class="logout-list">
+                <li> <a href="#" class="btn-sair">Encerrar sessão</a> </li>
             </ul>
         </nav>
     </aside>
 
-    <header>
-        <h1>
-            Vitão Corretor
-        </h1>
+    <section class="main-container">
+        <header>
             <form>
-                <label for="busca-geral">Buscar:</label>
-                <input type="search" id="busca-geral" name="q" placeholder="Faça sua busca aqui">
+                <input type="search" id="busca-geral" name="q" placeholder="Buscar imóveis ou pendências...">
                 <button type="submit">Buscar</button>
             </form>
-    </header>
+        </header>
 
-    <main>
-        <section>
+        <main>
             <h2>Visão Geral</h2>
             
-            <article>
-                <h3>Total de Imóveis</h3>
-                <p>0</p>
-            </article>
+            <section class="cards-grid">
+                <article class="card">
+                    <h3>Total de Imóveis</h3>
+                    <p>0</p>
+                </article>
+                <article class="card">
+                    <h3>Imóveis Ativos</h3>
+                    <p>0</p>
+                </article>
+                <article class="card">
+                    <h3>Novas Captações</h3>
+                    <p>0</p>
+                </article>
+            </section>
 
-            <article>
-                <h3>Imóveis Ativos</h3>
-                <p>0</p>
-            </article>
-
-            <article>
-                <h3>Novas Captações</h3>
-                <p>0</p>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <h3>Pendências</h3>
+            <section class="details-grid">
+                <article class="card">
+                    <h3>Pendências</h3>
                     <p>Nenhuma pendência para hoje.</p>
                 </article>
-
-            <article>
-                <h3>Calendário de Visitas</h3>
+                <article class="card">
+                    <h3>Calendário de Visitas</h3>
+                    <p>Sem visitas agendadas.</p>
                 </article>
-        </section>
-    </main>
+            </section>
+        </main>
+    </section>
 </body>
 </html>
