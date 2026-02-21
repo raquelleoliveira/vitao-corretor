@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitão Corretor - Cadastrar Imóvel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside id="sidebar">
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Vitão Corretor" class="logo-img">
+        </div>
+        
+        <nav>
+            <ul class="menu-list">
+                <li><a href="index.html">Dashboard</a></li>
+                <li> 
+                    <a href="lista-imoveis.html">Imóveis</a>
+                    <ul class="submenu">
+                        <li><a href="cadastro-imoveis.html" class="active">Novo imóvel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pendências</a></li>
+                <li><a href="#">Documentos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-container">
+        <h2>Cadastrar Novo Imóvel</h2>
+
+        <form action="#" method="POST" class="form-cadastro">
+            
+            <div class="campo">
+                <label for="titulo">Título do Anúncio:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ex: Casa duplex no centro" required>
+            </div>
+
+            <div class="campo">
+                <label for="tipo">Tipo de Imóvel:</label>
+                <select id="tipo" name="tipo">
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="terreno">Terreno</option>
+                    <option value="casa_comercial">Casa Comercial</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="codigo">Código do Imóvel:</label>
+                <input type="text" id="codigo" name="codigo" placeholder="Ex: #TR0021" required>
+            </div>
+
+            <div class="campo">
+                <label for="valor">Valor de Venda (R$):</label>
+                <input type="text" id="valor" name="valor" placeholder="Ex: 250.000">
+            </div>
+
+            <div class="campo full-width">
+                <label for="endereco">Endereço Completo:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro e cidade" required>
+            </div>
+
+            <div class="campo full-width">
+                <label for="descricao">Descrição Detalhada:</label>
+                <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva os detalhes do imóvel..."></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="link_drive">Pasta no Google Drive:</label>
+                <input type="url" id="link_drive" name="link_drive" placeholder="Link da pasta com documentos">
+            </div>
+
+            <div class="campo">
+                <label for="link_tecimob">Anúncio no Site (Tecimob):</label>
+                <input type="url" id="link_tecimob" name="link_tecimob" placeholder="Link do imóvel no Tecimob">
+            </div>
+
+            <button type="submit" class="btn-salvar">Salvar Imóvel</button>
+        </form>
+    </main>
+</body>
+</html>

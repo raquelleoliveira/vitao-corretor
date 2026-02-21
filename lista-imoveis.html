@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitão Corretor - Lista de Imóveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside id="sidebar">
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Vitão Corretor" class="logo-img">
+        </div>
+        
+        <nav>
+            <ul class="menu-list">
+                <li><a href="index.html">Dashboard</a></li>
+                <li> 
+                    <a href="lista-imoveis.html" class="active">Imóveis</a>
+                    <ul class="submenu">
+                        <li><a href="cadastro-imoveis.html">Novo imóvel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pendências</a></li>
+                <li><a href="#">Documentos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-container">
+        <header class="lista-header">
+            <h2>Imóveis Cadastrados</h2>
+            <a href="cadastro-imoveis.html" class="btn-novo">+ Novo Imóvel</a>
+        </header>
+
+        <section class="tabela-container">
+            <table class="tabela-imoveis">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Tipo</th>
+                        <th>Endereço</th>
+                        <th>Valor</th>
+                        <th style="width: 320px;">Ações</th> </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#TR0021</td>
+                        <td>Terreno</td>
+                        <td>Rua das Palmeiras, 123</td>
+                        <td>R$ 250.000</td>
+                        <td>
+                            <div class="acoes-container">
+                                <a href="#" target="_blank" class="btn-drive">📂 Drive</a>
+                                <a href="#" target="_blank" class="btn-tabela">🌐 Site</a>
+                                <button class="btn-tabela">Editar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#AP0045</td>
+                        <td>Apartamento</td>
+                        <td>Av. Central, 500 - Bloco B</td>
+                        <td>R$ 480.000</td>
+                        <td>
+                            <div class="acoes-container">
+                                <a href="#" target="_blank" class="btn-drive">📂 Drive</a>
+                                <button class="btn-tabela">Editar</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
